@@ -12,8 +12,6 @@ Nowoczesna aplikacja webowa do podpisywania i weryfikacji dokumentów PDF z wyko
 - Jak używać aplikacji
 - Najważniejsze endpointy API
 - Bezpieczeństwo
-- Rozwiązywanie problemów
-- Możliwe kierunki rozwoju
 
 ## Opis projektu
 
@@ -67,7 +65,7 @@ Projekt został podzielony na dwa moduły:
 ## Struktura projektu
 
 ```text
-System podpisów cyfrowych dla dokumentów PDF/
+System-podpisow-cyfrowych-dla-dokumentow-PDF/
 ├── backend/
 │   ├── app/
 │   │   ├── main.py
@@ -183,9 +181,6 @@ Prefiks: /api
 - DELETE /admin/signatures/{signature_id}
 - DELETE /admin/documents/{document_id}
 
-Pełna dokumentacja interaktywna API:
-- http://localhost:8000/docs
-
 ## Bezpieczeństwo
 
 - Hasła użytkowników są haszowane algorytmem bcrypt.
@@ -197,19 +192,6 @@ Wskazówka dla środowiska produkcyjnego:
 - przenieś SECRET_KEY do zmiennych środowiskowych,
 - ogranicz CORS do docelowych domen,
 - wymuś HTTPS i regularną rotację sekretów.
-
-## Rozwiązywanie problemów
-
-### CORS / brak połączenia frontend-backend
-- Sprawdź, czy backend działa na porcie 8000, a frontend na 5173.
-- Zweryfikuj konfigurację CORS w backend/app/main.py.
-
-### Błąd logowania 401
-- Upewnij się, że token JWT jest poprawnie zapisany i wysyłany w nagłówku Authorization.
-
-### Problem z podpisem PDF
-- Sprawdź, czy dokument nie jest już podpisany.
-- Zweryfikuj, czy klucze kryptograficzne są dostępne w bieżącej sesji przeglądarki.
 
 ## Autorzy
 

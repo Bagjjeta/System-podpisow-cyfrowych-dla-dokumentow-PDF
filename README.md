@@ -188,11 +188,6 @@ Prefiks: /api
 - Podpis realizowany jest przez RSA-PSS z SHA-256.
 - Klucze prywatne generowane i przechowywane są po stronie klienta (sessionStorage).
 
-Wskazówka dla środowiska produkcyjnego:
-- przenieś SECRET_KEY do zmiennych środowiskowych,
-- ogranicz CORS do docelowych domen,
-- wymuś HTTPS i regularną rotację sekretów.
-
 ## Autorzy
 
 Projekt zespołowy PAI.

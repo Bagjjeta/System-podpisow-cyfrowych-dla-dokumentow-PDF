@@ -194,4 +194,4 @@ Projekt zespołowy PAI.
 
 ## Licencja
 
-Do uzupełnienia (np. MIT).
+MIT License
